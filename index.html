@@ -43,7 +43,7 @@
                 // Get cookie using our custom function
                 var firstName = getCookie("pleasework");
                 
-                if(firstName != "") {
+                if(firstName != "null") {
                     alert("Welcome again, " + firstName);
                 } else {
                     firstName = prompt("Please enter your first name:");
@@ -57,6 +57,6 @@
         </script>
         <button onclick="setCookie('pleasework', 'true', 40)">setcookie</button>
         <button onclick="checkCookie()">Check cookie</button>
-        <button onclick="alert(logged)">Did it work?</button>
+        
     </body>
 </html>
