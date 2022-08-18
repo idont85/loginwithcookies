@@ -5,6 +5,7 @@
     </head>
     <body>
         <script>
+            var logged = getCookie(pleasework)
             function setCookie(name, value, daysToLive) {
                 
                 // Encode value in order to escape semicolons, commas, and whitespace
@@ -57,5 +58,6 @@
         </script>
         <button onclick="setCookie('pleasework', 'true', 40)">setcookie</button>
         <button onclick="checkCookie()">Check cookie</button>
+        <button onclick="alert(logged)">Did it work?</button>
     </body>
 </html>
