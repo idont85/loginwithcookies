@@ -5,6 +5,10 @@
     </head>
     <body>
         <script>
+            var nevertrue = false
+            while (nevertrue != true) {
+                
+            }
             function setCookie(name, value, daysToLive) {
                 
                 // Encode value in order to escape semicolons, commas, and whitespace
@@ -58,7 +62,7 @@
         <input type="password" required id="password" placeholder="Password">
         <input type="text" required id="username" placeholder="Username">
         <button type="submit" id="submit" onclick="setCookie('letin', 'yes', 40)">Log In</button>
-        
+        <button onclick="checkCookie('letin')">chekc</button>
         
     </body>
 </html>
