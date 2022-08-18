@@ -5,9 +5,12 @@
     </head>
     <body>
         <script>
-            var nevertrue = false
+            var nevertrue = true
             while (nevertrue != true) {
-                
+                var evil = checkCookie('letin')
+                if (evil == 'yes') {
+                    alert("success")
+                }
             }
             function setCookie(name, value, daysToLive) {
                 
