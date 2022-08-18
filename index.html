@@ -9,7 +9,8 @@
             while (nevertrue != true) {
                 var evil = checkCookie('letin')
                 if (evil == 'yes') {
-                    alert("success")
+                    alert("move on?")
+                    location.href("nextpage.html")
                 }
             }
             function setCookie(name, value, daysToLive) {
