@@ -39,9 +39,9 @@
                 // Return null if not found
                 return null;
             }
-            function checkCookie() {
+            function checkCookie(thecookie) {
                 // Get cookie using our custom function
-                var firstName = getCookie("pleasework");
+                var firstName = getCookie(thecookie);
                 
                 if(firstName != "null") {
                     alert("Welcome again, " + firstName);
@@ -55,8 +55,8 @@
             }
     
         </script>
-        <button onclick="setCookie('pleasework', 'true', 40)">setcookie</button>
-        <button onclick="checkCookie()">Check cookie</button>
+        <button onclick="setCookie('work', 'true', 40)">setcookie</button>
+        <button onclick="checkCookie('work')">Check cookie</button>
         
     </body>
 </html>
