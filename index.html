@@ -4,8 +4,6 @@
         <title>Login</title>
     </head>
     <body>
-        <button onclick="setCookie(pleasework, true, 40)">setcookie</button>
-        <button onclick="checkCookie()">Check cookie</button>
         <script>
             function setCookie(name, value, daysToLive) {
                 
@@ -16,7 +14,6 @@
                 /* Sets the max-age attribute so that the cookie expires
                 after the specified number of days */
                     cookie += "; max-age=" + (daysToLive*24*60*60);
-                    cookie += "; path=/; domain=incha.up.railway.app";
                     alert(cookie)
                     document.cookie = cookie;
                 }
@@ -57,5 +54,7 @@
             }
     
         </script>
+        <button onclick="setCookie(pleasework, true, 40)">setcookie</button>
+        <button onclick="checkCookie()">Check cookie</button>
     </body>
 </html>
