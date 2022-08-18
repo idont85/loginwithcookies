@@ -11,6 +11,8 @@
                 if (evil == 'yes') {
                     nevertrue = 'true'
                     location.href("nextpage.html")
+                } else {
+                    alert("didn't work")
                 }
             }
             function setCookie(name, value, daysToLive) {
@@ -40,7 +42,7 @@
                     if(name == cookiePair[0].trim()) {
                         // Decode the cookie value and return
                         return decodeURIComponent(cookiePair[1]);
-                    }
+                    } 
                 }
                 
         
