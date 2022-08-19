@@ -5,14 +5,10 @@
     </head>
     <body>
         <script>
-            var nevertrue = 'false'
-            while (nevertrue != true) {
-                var evil = checkCookie('letin')
-                if (evil == 'yes') {
-                    nevertrue = 'true'
-                    location.href("nextpage.html")
-                } else {
-                    alert("didn't work")
+            function doThis() {
+                var value = checkCookie(letin);
+                if (value == 'yes') {
+                    location.href = "nextpage.html"
                 }
             }
             function setCookie(name, value, daysToLive) {
