@@ -7,9 +7,9 @@
             function doThis() {
                 var value = getCookie('letin');
                 if (value == 'yes') {
-                    window.open("nextpage.html")
+                    window.location.href = "nextpage.html"
                 } else {
-                    alert("Didn't work. Value Retrieved: " + value)
+                    alert("Please Login")
                     
                 }
             }
