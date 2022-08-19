@@ -4,9 +4,9 @@
         <title>Login</title>
         <script>
             function doThis() {
-                var value = checkCookie(letin);
+                var value = checkCookie('letin');
                 if (value == 'yes') {
-                    location.href = "nextpage.html"
+                    location.href = "nextpage.html";
                 }
             }
             function setCookie(name, value, daysToLive) {
@@ -65,6 +65,7 @@
         <input type="text" required id="username" placeholder="Username">
         <button type="submit" id="submit" onclick="setCookie('letin', 'yes', 40)">Log In</button>
         <button onclick="checkCookie('letin')">chekc</button>
+        <button onclick="doThis()"></button>
         
     </body>
 </html>
