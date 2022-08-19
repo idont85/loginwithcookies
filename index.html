@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Login</title>
-        
         <script>
+            var value = ""
             window.onload = doThis;
             function doThis() {
                 var value = checkCookie('letin');
@@ -48,12 +48,12 @@
                 // Return null if not found
                 return null;
             }
-            function checkCookie(thecookie) {
+            function checkCookie() {
                 // Get cookie using our custom function
-                var firstName = getCookie(thecookie);
+                var firstName = getCookie("letin");
                 
-                if(firstName != "null") {
-                    
+                if(firstName != "") {
+                    value = firstname
                 } else {
                     firstName = prompt("Please enter your first name:");
                     if(firstName != "" && firstName != null) {
@@ -65,7 +65,7 @@
     
         </script>
     </head>
-    <body onLoad="doThis()">
+    <body>
         <input type="password" required id="password" placeholder="Password">
         <input type="text" required id="username" placeholder="Username">
         <button type="submit" id="submit" onclick="setCookie('letin', 'yes', 40)">Log In</button>
