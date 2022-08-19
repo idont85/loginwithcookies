@@ -3,10 +3,9 @@
     <head>
         <title>Login</title>
         <script>
-            var value = ""
             window.onload = doThis;
             function doThis() {
-                var value = checkCookie('letin');
+                var value = getCookie('letin');
                 if (value == 'yes') {
                     alert("worked")
                 } else {
