@@ -2,11 +2,15 @@
 <html>
     <head>
         <title>Login</title>
+        
         <script>
+            window.onload = doThis;
             function doThis() {
                 var value = checkCookie('letin');
                 if (value == 'yes') {
                     alert("worked")
+                } else {
+                    alert("Didn't work :(")
                 }
             }
             function setCookie(name, value, daysToLive) {
