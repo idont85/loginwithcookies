@@ -2,8 +2,6 @@
 <html>
     <head>
         <title>Login</title>
-    </head>
-    <body onload="doThis()">
         <script>
             function doThis() {
                 var value = checkCookie(letin);
@@ -61,6 +59,8 @@
             }
     
         </script>
+    </head>
+    <body onLoad="doThis()">
         <input type="password" required id="password" placeholder="Password">
         <input type="text" required id="username" placeholder="Username">
         <button type="submit" id="submit" onclick="setCookie('letin', 'yes', 40)">Log In</button>
